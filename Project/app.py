@@ -70,7 +70,7 @@ def get_players():
 
 #--Get player by ID
 @app.route("/players/<int:player_id>", methods=["GET"])
-def get_player(player_id):
+def get_player(player_id):   
     player = next((p for p in players if p['id'] == player_id), None)
     if not player:
         abort(404, description=f"Player with ID {player_id} not found.")
