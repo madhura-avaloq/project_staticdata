@@ -67,7 +67,7 @@ def add_player():
 @app.route("/players", methods=["GET"])
 def get_players():
     return jsonify(players)
-
+  
 #--Get player by ID
 @app.route("/players/<int:player_id>", methods=["GET"])
 def get_player(player_id):   
