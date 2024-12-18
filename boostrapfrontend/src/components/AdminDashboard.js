@@ -12,7 +12,7 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
-    if (!userInfo || userInfo.role !== 'admin') {
+    if (!userInfo || userInfo.role !== 'admin') { 
       navigate('/login');
     }
 
